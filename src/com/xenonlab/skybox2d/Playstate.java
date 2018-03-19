@@ -17,7 +17,7 @@ public class Playstate extends State {
 	public Playstate(GameStateManager gsm) {
 		super(gsm);
 		world = new World("worlds/world2.txt");
-		player = new Player(30, 40, 8, 31, 0.75f);
+		player = new Player(40, 40, 8, 31, 0.75f); // Player spawn
 		camera = new Camera(player);
 		inventory = new Inventory();
 		inventory.addItem(new Item(Material.GRASS, Material.GRASS.getTexture(), 64, true));
