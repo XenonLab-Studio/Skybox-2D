@@ -1,4 +1,11 @@
+/*
+ * Copyright (C) 2018 Stefano Peris
+ * eMail: <xenon77.dev@gmail.com>
+ * Github: https://github.com/XenonCoder
+ */
+
 package com.xenonlab.skybox2d;
+
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.event.MouseWheelEvent;

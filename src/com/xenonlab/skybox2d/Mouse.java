@@ -1,4 +1,11 @@
+/*
+ * Copyright (C) 2018 Stefano Peris
+ * eMail: <xenon77.dev@gmail.com>
+ * Github: https://github.com/XenonCoder
+ */
+
 package com.xenonlab.skybox2d;
+
 import java.awt.Point;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
