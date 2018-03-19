@@ -18,7 +18,7 @@ public class Main extends JFrame {
 		setLayout(new BorderLayout());
 		add(panel, BorderLayout.CENTER);
 		pack();
-		setResizable(true);
+		setResizable(false);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		setVisible(true);
