@@ -39,7 +39,7 @@ public class GamePanel extends JPanel implements ComponentListener, Runnable, Ke
 	public GamePanel() {
 		super();
 		setOpaque(false);
-		setPreferredSize(new Dimension(600, 400));
+		setPreferredSize(new Dimension(800, 600));
 		addComponentListener(this);
 		setFocusable(true);
 		requestFocus();
@@ -47,8 +47,8 @@ public class GamePanel extends JPanel implements ComponentListener, Runnable, Ke
 		addMouseListener(this);
 		addMouseMotionListener(this);
 		
-		width = 600;
-		height = 400;
+		width = 800;
+		height = 600;
 		mouse = new Mouse(this);
 		gsm = new GameStateManager(GameStateManager.PLAYSTATE);
 	}
