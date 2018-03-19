@@ -109,7 +109,7 @@ public class GamePanel extends JPanel implements ComponentListener, Runnable, Ke
 		gsm.render(g2d);
 		g.drawImage(image, 0, 0, width, height, null);
 		g.setColor(Color.white);
-		g.drawString("Version: Alpha 1", 10, 20); // Versione number
+		g.drawString("Version: Alpha 1", 10, 20); // Version number
 		g.drawString("FPS: " + averageFPS, 730, 20); // View FPS
 		g2d.dispose();
 	}
