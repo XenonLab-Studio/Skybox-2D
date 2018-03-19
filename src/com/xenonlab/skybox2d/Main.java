@@ -16,7 +16,7 @@ public class Main extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	public static final int BLOCKSIZE = 16;
-	public static Spritesheet spritesheet = new Spritesheet(ImageLoader.loadImage("img/terrain.png"), 8, BLOCKSIZE, BLOCKSIZE);
+	public static Spritesheet spritesheet = new Spritesheet(ImageLoader.loadImage("img/tilesheet.png"), 8, BLOCKSIZE, BLOCKSIZE);
 
 	
 	public Main() {
