@@ -20,7 +20,7 @@ public class Main extends JFrame {
 
 	
 	public Main() {
-		super("Skybox 2D");
+		super("SKYBOX 2D");
 		GamePanel panel = new GamePanel();
 		setLayout(new BorderLayout());
 		add(panel, BorderLayout.CENTER);
@@ -39,3 +39,4 @@ public class Main extends JFrame {
 		return new Random().nextInt(max - min + 1) + min;
 	}
 }
+
