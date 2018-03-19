@@ -16,7 +16,7 @@ public class Playstate extends State {
 	
 	public Playstate(GameStateManager gsm) {
 		super(gsm);
-		world = new World("worlds/world2.txt");
+		world = new World("worlds/world.txt");
 		player = new Player(40, 40, 8, 31, 0.75f); // Spawn, ..., ..., ..., speed
 		camera = new Camera(player);
 		inventory = new Inventory();
