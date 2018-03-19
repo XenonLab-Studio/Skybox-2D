@@ -20,11 +20,11 @@ public class Playstate extends State {
 		player = new Player(40, 40, 8, 31, 0.75f); // Player spawn
 		camera = new Camera(player);
 		inventory = new Inventory();
-		inventory.addItem(new Item(Material.GRASS, Material.GRASS.getTexture(), 64, true));
+		inventory.addItem(new Item(Material.DIRT_GRASS, Material.DIRT_GRASS.getTexture(), 64, true));
 		inventory.addItem(new Item(Material.SAND, Material.SAND.getTexture(), 64, true));
-		inventory.addItem(new Item(Material.OAK_LEAVES, Material.OAK_LEAVES.getTexture(), 64, true));
-		inventory.addItem(new Item(Material.OAK_TRUNK, Material.OAK_TRUNK.getTexture(), 64, true));
-		inventory.addItem(new Item(Material.OAK_SAPLING, Material.OAK_SAPLING.getTexture(), 64, true));
+		inventory.addItem(new Item(Material.PINE_LEAVES, Material.PINE_LEAVES.getTexture(), 64, true));
+		inventory.addItem(new Item(Material.PINE_TRUNK, Material.PINE_TRUNK.getTexture(), 64, true));
+		inventory.addItem(new Item(Material.DEFAULT_GRASS, Material.DEFAULT_GRASS.getTexture(), 64, true));
 	}
 
 	@Override

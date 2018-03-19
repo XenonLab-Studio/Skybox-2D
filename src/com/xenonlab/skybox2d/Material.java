@@ -7,11 +7,11 @@ public enum Material {
 	AIR(0, true, true),
 	STONE(1, false, true),
 	DIRT(2, false, true),
-	GRASS(3, false, true),
+	DIRT_GRASS(3, false, true),
 	SAND(4, false, false),
-	OAK_SAPLING(5, true, false),
-	OAK_TRUNK(6, false, false),
-	OAK_LEAVES(7, false, false);
+	DEFAULT_GRASS(5, true, false),
+	PINE_TRUNK(6, false, false),
+	PINE_LEAVES(7, false, false);
 	
 	private int id;
 	private boolean walkable;
