@@ -64,7 +64,7 @@ public class GamePanel extends JPanel implements ComponentListener, Runnable, Ke
 	@Override
 	public void run() {
 		
-		image = createVolatileImage(600 / SCALE, 400 / SCALE);
+		image = createVolatileImage(800 / SCALE, 600 / SCALE);
 		
 		long startTime;
 		long URDTimeMillis;
@@ -109,8 +109,8 @@ public class GamePanel extends JPanel implements ComponentListener, Runnable, Ke
 		gsm.render(g2d);
 		g.drawImage(image, 0, 0, width, height, null);
 		g.setColor(Color.white);
-		g.drawString("Version: Alpha 1", 10, 20);
-		g.drawString("FPS: " + averageFPS, 730, 20);
+		g.drawString("Version: Alpha 1", 10, 20); // Versione number
+		g.drawString("FPS: " + averageFPS, 730, 20); // View FPS
 		g2d.dispose();
 	}
 	
