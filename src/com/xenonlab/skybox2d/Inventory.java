@@ -51,7 +51,7 @@ public class Inventory implements MouseWheelListener {
 		for(int i = 0; i < toolbar.length; i++) {
 			toolbar[i].render(g);
 			// TextFrame for text strings
-			g.setColor(Color.DARK_GRAY);
+			g.setColor(Color.GRAY);
 			g.fillRect(2, 2, 37, 7); // Number version
 			g.fillRect(240, 2, 24, 7); // FPS
 			
