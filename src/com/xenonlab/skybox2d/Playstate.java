@@ -28,7 +28,7 @@ public class Playstate extends State {
 		world = new World("worlds/world.txt");
 		player = new Player(40, 40, 8, 31, 0.75f); // Spawn, ..., ..., ..., speed
 		camera = new Camera(player);
-		dc = new Daycicle();
+		dc = new Daycicle(Daycicle.NIGHT, 12000L);
 		
 		inventory = new Inventory();
 		inventory.addItem(new Item(Material.STONE, Material.STONE.getTexture(), 64, true));
@@ -44,6 +44,7 @@ public class Playstate extends State {
 	public void update() {
 		camera.update();
 		player.update();
+		dc.update();
 		inventory.update();
 	}
 
