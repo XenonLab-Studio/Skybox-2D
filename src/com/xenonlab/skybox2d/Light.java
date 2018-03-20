@@ -24,6 +24,6 @@ public class Light {
 	}
 	
 	public void render(Graphics2D g) {
-		g.drawImage(LIGHT, x-radius, y-radius, radius*2, radius*2, null);
+		g.drawImage(LIGHT, x-radius - Playstate.camera.getCamX(), y-radius - Playstate.camera.getCamY(), radius*2, radius*2, null);
 	}
 }
