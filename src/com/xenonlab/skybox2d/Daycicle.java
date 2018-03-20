@@ -29,6 +29,11 @@ public class Daycicle {
 		
 		// See the official documentation on: https://docs.oracle.com/javase/tutorial/2d/advanced/compositing.html
 		AlphaComposite ac = AlphaComposite.getInstance(AlphaComposite.DST_OUT);
+		g2.setComposite(ac);
+		light.render(g2);
+		
+		g.drawImage(image, 0, 0, null);
+		g2.dispose();
 		
 	}
 }

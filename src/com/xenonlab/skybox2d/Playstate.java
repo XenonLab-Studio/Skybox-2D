@@ -21,11 +21,15 @@ public class Playstate extends State {
 	public static Camera camera;
 	public static Inventory inventory;
 	
+	private Daycicle dc;
+	
 	public Playstate(GameStateManager gsm) {
 		super(gsm);
 		world = new World("worlds/world.txt");
 		player = new Player(40, 40, 8, 31, 0.75f); // Spawn, ..., ..., ..., speed
 		camera = new Camera(player);
+		dc = new Daycicle();
+		
 		inventory = new Inventory();
 		inventory.addItem(new Item(Material.STONE, Material.STONE.getTexture(), 64, true));
 		inventory.addItem(new Item(Material.DIRT, Material.DIRT.getTexture(), 64, true));
@@ -48,6 +52,7 @@ public class Playstate extends State {
 		g.clearRect(0, 0, GamePanel.width / GamePanel.SCALE, GamePanel.height / GamePanel.SCALE);
 		world.render(g);
 		player.render(g);
+		dc.render(g);
 		inventory.render(g);
 	}
 
