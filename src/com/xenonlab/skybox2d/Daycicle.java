@@ -32,30 +32,30 @@ public class Daycicle {
 		startTime = System.currentTimeMillis();
 		fadeStartTime = System.currentTimeMillis();
 		
-		if(time == NIGHT)alpha = 230f;
+		if(time == DAY)alpha = 230f;
 		
 		light = new Light(100, 50, 50);
 	}
 	
 	public void update() {
 		if (fading) {
-			if (time == DAY) {
+			if (time == NIGHT) {
 				alpha = (float) (255 * Math.sin(Math.PI / 2 * (System.currentTimeMillis() - fadeStartTime) / FADE_TIME));
 				if (alpha >= 230) {
 					alpha = 230;
 					fading = false;
-					time = NIGHT;
+					time = DAY;
 					startTime = System.currentTimeMillis();
 					return;
 				}
 			}
 			
-			if (time == NIGHT) {
+			if (time == DAY) {
 				alpha = (float) (230 * Math.cos(Math.PI / 2 * (System.currentTimeMillis() - fadeStartTime) / FADE_TIME));
 				if (alpha <= 0) {
 					alpha = 0;
 					fading = false;
-					time = DAY;
+					time = NIGHT;
 					startTime = System.currentTimeMillis();
 					return;
 				}

@@ -50,6 +50,11 @@ public class Inventory implements MouseWheelListener {
 	public void render(Graphics2D g) {
 		for(int i = 0; i < toolbar.length; i++) {
 			toolbar[i].render(g);
+			// TextFrame for text strings
+			g.setColor(Color.DARK_GRAY);
+			g.fillRect(2, 2, 37, 7); // Number version
+			g.fillRect(240, 2, 24, 7); // FPS
+			
 			if(toolbar[i].getItem() != null) {
 				g.drawImage(toolbar[i].getItem().getImage(), (int)toolbar[i].getX(), (int)toolbar[i].getY(), null);
 				g.setColor(Color.WHITE);
