@@ -15,7 +15,6 @@ import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 
-
 public class Main extends JFrame {
 
 	private static final long serialVersionUID = 1L;
@@ -31,7 +30,6 @@ public class Main extends JFrame {
 		
 		setCursor(cursor);
 	}
-
 	
 	public Main() {
 		super("SKYBOX 2D");
@@ -39,6 +37,11 @@ public class Main extends JFrame {
 		setLayout(new BorderLayout());
 		add(panel, BorderLayout.CENTER);
 		pack();
+		
+		// Start menu
+		//Menu menu = new Menu();
+		//add(menu);
+		
 		setResizable(false);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
