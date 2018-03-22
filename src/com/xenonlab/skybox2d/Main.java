@@ -38,10 +38,6 @@ public class Main extends JFrame {
 		add(panel, BorderLayout.CENTER);
 		pack();
 		
-		// Start menu
-		//Menu menu = new Menu();
-		//add(menu);
-		
 		setResizable(false);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
