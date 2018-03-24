@@ -25,7 +25,7 @@ public class Main extends JFrame {
 	public static Spritesheet spritesheet = new Spritesheet(ImageLoader.loadImage("img/tilesheet.png"), 8, BLOCKSIZE, BLOCKSIZE);
 	
 	// Font inventory items (hotbar)
-			Font fhotbar = new Font("Consolas", Font.PLAIN, 9);
+	Font fhotbar = new Font("Consolas", Font.PLAIN, 9);
 	
 	// Custom mouse cursor
 	public void CustomCursor() {
