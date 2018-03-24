@@ -6,8 +6,11 @@
 
 package com.xenonlab.skybox2d;
 
+import com.xenonlab.skybox2d.*;
+
 import java.awt.BorderLayout;
 import java.awt.Cursor;
+import java.awt.Font;
 import java.awt.Image;
 import java.awt.Point;
 import java.util.Random;
@@ -20,6 +23,9 @@ public class Main extends JFrame {
 	private static final long serialVersionUID = 1L;
 	public static final int BLOCKSIZE = 16;
 	public static Spritesheet spritesheet = new Spritesheet(ImageLoader.loadImage("img/tilesheet.png"), 8, BLOCKSIZE, BLOCKSIZE);
+	
+	// Font inventory items (hotbar)
+			Font fhotbar = new Font("Consolas", Font.PLAIN, 9);
 	
 	// Custom mouse cursor
 	public void CustomCursor() {
@@ -35,6 +41,7 @@ public class Main extends JFrame {
 		super("SKYBOX 2D");
 		GamePanel panel = new GamePanel();
 		setLayout(new BorderLayout());
+		setFont(fhotbar);
 		add(panel, BorderLayout.CENTER);
 		pack();
 		

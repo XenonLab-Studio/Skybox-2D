@@ -17,7 +17,7 @@ public class Daycicle {
 	
 	public static final int DAY = 1;
 	public static final int NIGHT = 0;
-	private final long FADE_TIME = 4000L;
+	private final long FADE_TIME = 62000L;
 	
 	private boolean fading;
 	private long startTime;
